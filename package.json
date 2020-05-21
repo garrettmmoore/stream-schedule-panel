@@ -1,0 +1,25 @@
+{
+  "name": "stream-schedule-panel",
+  "version": "1.0.0",
+  "description": "A Twitch Panel Extension to view a streamer's schedule.",
+  "main": "index.js",
+  "repository": "https://github.com/garrettmmoore/stream-schedule-panel.git",
+  "author": "Garrett Moore",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@mdx-js/react": "^1.5.1",
+    "@theme-ui/presets": "^0.2.44",
+    "gatsby": "^2.18.2",
+    "isolated-theme-ui": "^1.0.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "theme-ui": "^0.2.49"
+  },
+  "scripts": {
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "clean": "gatsby clean"
+  }
+}

@@ -105,3 +105,6 @@ dist
 
 # Developer Rig file
 stream-schedule.json
+
+# VSCode file
+.vscode

@@ -108,3 +108,7 @@ stream-schedule.json
 
 # VSCode file
 .vscode
+
+# .env files
+.env*
+!.env.EXAMPLE

@@ -69,8 +69,8 @@ typings/
 .yarn-integrity
 
 # dotenv environment variables file
-.env
-.env.test
+.env*
+!.env.EXAMPLE
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
@@ -109,6 +109,5 @@ stream-schedule.json
 # VSCode file
 .vscode
 
-# .env files
-.env*
-!.env.EXAMPLE
+# gatsby build output
+/public

@@ -4,6 +4,8 @@
   "description": "A Twitch Extenstion that enables a viewer to see a streamer's stream schedule",
   "main": "index.js",
   "scripts": {
+    "build": "zip -r archive.zip panel.html src/",
+    "dev": "netlify dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

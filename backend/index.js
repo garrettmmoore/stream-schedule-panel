@@ -1,15 +1,13 @@
 const express = require("express");
 const cors = require("cors");
 const getCal = require("node-ical");
-const dotenv = require("dotenv");
 const striptags = require("striptags");
 
 const app = new express();
-dotenv.config();
 
 app.use(cors());
 
-const port = 3000;
+app.get("/test", (_, res) => res.json({ boop: true }));
 
 app.get("/", (req, res) => {
   const ical = req.query.ical;
@@ -17,6 +15,7 @@ app.get("/", (req, res) => {
   getCal.fromURL(ical, {}, (error, result) => {
     if (error) {
       res.sendStatus(500);
+      return;
     }
 
     const events = Object.values(result);
@@ -30,9 +29,8 @@ app.get("/", (req, res) => {
       }));
 
     res.json(sorted);
+    return;
   });
 });
 
-app.listen(port, () =>
-  console.log(`App listening at http://localhost:${port}`)
-);
+app.listen(8080, () => console.log(`App listening at http://localhost:8080`));

@@ -111,3 +111,6 @@ stream-schedule.json
 
 # gatsby build output
 /public
+
+# ignore zip files
+*.zip
